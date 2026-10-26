@@ -1,34 +1,13 @@
-# Simulador de Conta Bancária - Focado em estudos de Engenharia de Software
-saldo = 1000.0
+## Simulador de Conta Bancária em Python
+Este é um projeto prático desenvolvido para consolidar conceitos iniciais de lógica de programação, estruturas de repetição e condicionais em Python.
 
-print("--- Bem-vindo ao Simulador de Conta Digital ---")
+## Funcionalidades
+- Consulta de saldo em tempo real.
+- Sistema de depósitos com validação de valores.
+- Sistema de saques com verificação de saldo disponível.
 
-while True:
-    print("\n1. Ver Saldo")
-    print("2. Depositar Dinheiro")
-    print("3. Sacar Dinheiro")
-    print("4. Sair")
-    
-    opcao = input("Escolha uma opção (1-4): ")
-    
-    if opcao == "1":
-        print(f"Seu saldo atual é: R$ {saldo:.2f}")
-    elif opcao == "2":
-        valor_deposito = float(input("Digite o valor para depósito: R$ "))
-        if valor_deposito > 0:
-            saldo += valor_deposito
-            print(f"Depósito de R$ {valor_deposito:.2f} realizado com sucesso!")
-        else:
-            print("Valor inválido.")
-    elif opcao == "3":
-        valor_saque = float(input("Digite o valor para saque: R$ "))
-        if 0 < valor_saque <= saldo:
-            saldo -= valor_saque
-            print(f"Saque de R$ {valor_saque:.2f} realizado com sucesso!")
-        else:
-            print("Saldo insuficiente ou valor inválido.")
-    elif opcao == "4":
-        print("Obrigado por usar nosso sistema bancário!")
-        break
-    else:
-        print("Opção inválida. Tente novamente.")
+## Tecnologias Utilizadas
+- Python 3 (Lógica central do sistema)
+
+## Contexto Acadêmico
+Desenvolvido por um estudante de Engenharia de Software da USF, buscando aplicar conceitos teóricos em soluções de tecnologia voltadas para o setor financeiro.
