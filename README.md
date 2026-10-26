@@ -6,7 +6,7 @@ Este é um projeto prático desenvolvido para consolidar conceitos iniciais de l
 - Sistema de depósitos com validação de valores.
 - Sistema de saques com verificação de saldo disponível.
 
-## Tecnologias Utilizadas
+## Tecnologia Utilizada
 - Python 3 (Lógica central do sistema)
 
 ## Contexto Acadêmico
